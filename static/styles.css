@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #C7D6E1;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    height : 350px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    opacity: 1;
+    /* animation: animation 500ms linear ; */
+}
+
+.quotes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    margin-top: 60px;
+    padding: 0px 1rem;
+}
+
+.next{
+    background-color: #3CA7FB;
+    color: white;
+    padding: 1rem 0;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-size: 26px;
+    text-align: center;
+}
+
+.triangle{
+    width : 0;
+    height:0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom:60px solid #616E7D;
+    position: absolute;
+    top:-10px;
+    right:-40px;
+    transform: rotate(45deg);
+}
+
+.quote-number{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    color:white;
+    font-size: 16px;
+}
+
+@keyframes animation {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes loading {
+    from {
+        opacity : 0;
+        transform:scale(0.8)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
