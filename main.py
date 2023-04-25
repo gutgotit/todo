@@ -42,6 +42,7 @@ def check(post_slug):
 		except:
 			return render_template('error.html')
 		return redirect('/home')
+	
 @app.route('/', methods = ['GET', 'POST'])
 def login():
 	if(request.method=='POST'):
